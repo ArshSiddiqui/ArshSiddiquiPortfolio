@@ -1,3 +1,20 @@
 body{
 	background-color: #000000;
 }
+#title{
+	font-family: "Georgia", Times, Serif;
+	color: #FFFFFF;
+	text-align: center;
+}
+div.titleContainer {
+	height: 10em;
+	position: flex;
+	align-items: center;
+}
+div.titleContainer p {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(0, -50%);
+}
