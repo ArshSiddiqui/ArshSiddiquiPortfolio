@@ -6,6 +6,11 @@ body{
 	color: #FFFFFF;
 	text-align: center;
 }
+#description{
+	font-family: "Georgia", Times, Serif;
+	color: #FFFFFF;
+	text-align: center;
+}
 div.titleContainer {
 	height: 10em;
 	position: flex;
@@ -17,10 +22,4 @@ div.titleContainer p {
 	top: 50%;
 	left: 50%;
 	transform: translate(0, -50%);
-}
-
-#description{
-	font-family: "Georgia", Times, Serif;
-	color: #FFFFFF;
-	text-align: center;
 }
