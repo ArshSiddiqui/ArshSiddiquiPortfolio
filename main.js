@@ -1,4 +1,4 @@
-var randNum = Math.floor(Math.random() * 1);
+var randNum = Math.floor(Math.random() * 2);
 if (randNum == 0) {
   document.getElementById("description").innerHTML = "Professional bucatini enjoyer";
   reload();
