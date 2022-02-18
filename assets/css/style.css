@@ -7,6 +7,7 @@ body{
 	font-family: "Georgia", Times, Serif;
 	color: #FFFFFF;
 	text-align: center;
+	font-size: 50px;
 }
 div.titleContainer {
 	height: 10em;
@@ -34,7 +35,31 @@ div.descContainer {
 div.descContainer p {
 	margin: auto;
 	position: absolute;
-	top: 50%;
+	top: 53%;
 	left: 50%;
 }
 
+.Experience {
+	height: 20px;
+}
+#ExperienceBtn {
+	margin-top: 2rem;
+	border-color: #FFFFFF;
+	border-style: solid;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.Contact {
+	height: 20px;
+}
+#ContactBtn {
+	margin-top: 2rem;
+	border-color: #FFFFFF;
+	border-style: solid;
+	background-color: #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 16px;
+}
