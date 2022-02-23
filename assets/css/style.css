@@ -1,5 +1,6 @@
 body{
 	background-color: #000000;
+	overflow: hidden;
 }
 /* CSS RESET START */
 /* Box sizing rules */
