@@ -1,6 +1,6 @@
 body{
 	background-color: #000000;
-	
+	overflow: hidden;
 }
 /* CSS RESET START */
 /* Box sizing rules */
@@ -120,18 +120,12 @@ select {
 	font-size: 1rem;
 	width: 6rem;
 }
-
-#LinkedInBtn {
-	border-color: #FFFFFF;
-	border-style: none;
+#GitHubBtn:hover {
 	background-color: #000000;
-	color: #FFFFFF;
-	cursor: pointer;
-	font-size: 1rem;
-	width: 6rem;
+	border-color: #000000;
 }
 
-#AboutBtn {
+#LinkedInBtn {
 	border-color: #FFFFFF;
 	border-style: solid;
 	background-color: #FFFFFF;
@@ -139,9 +133,64 @@ select {
 	font-size: 1rem;
 	width: 6rem;
 }
+#LinkedInBtn:hover {
+	background-color: #000000;
+	border-color: #000000;
+}
+
+#AboutBtn {
+	border-color: #FFFFFF;
+	border-style: solid;
+	background-color: #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 1rem;
+	width: 6rem;
+}
+
+x, t {
+    display: block;
+    font-size: 1rem;
+    color: #000000;
+    position: relative;
+    transition: all 0.35s;
+    min-width: 3rem;
+}
+x span, t span {
+    position: relative;
+    z-index: 2;
+}
+x:after, t:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #000000;
+    transition: all 0.35s;
+}
+t:after{
+    background-color: #000000;
+}
+x:hover, t:hover{
+    color: #FFFFFF;
+}
+x:hover:after, t:hover:after{
+    width: 100%;
+}
+
+
+
+
+
+
+/* -------------------------------Marquees-------------------------------- */
 
 #top{
-	color: #DEECFF;
+	color: #C5F7BC;
+	font-size: 2rem;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif 
 }
 
 .marquee {
@@ -152,23 +201,23 @@ select {
 	background-color: #000000;  
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	padding: 4px 0 4px 0;
+	padding: 4rem 0 8rem 0;
 }
 
 .marquee .track1{
-	animation: marquee 10s linear infinite
+	animation: marquee 8s linear infinite
 }
 
 .marquee .track2{
-	animation: marquee 10s linear 2.5s infinite 
+	animation: marquee 8s linear 2s infinite 
 }
 
 .marquee .track3{
-	animation: marquee 10s linear 5s infinite
+	animation: marquee 8s linear 4s infinite
 }
 
 .marquee .track4{
-	animation: marquee 10s linear 7.5s infinite
+	animation: marquee 8s linear 6s infinite
 }
 
 
@@ -193,8 +242,12 @@ select {
 
 
 #bot{
-	color: #DEECFF;
+	color: #C5F7BC;
+	font-size: 2rem;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif 
+	
 }
+
 .marqueeBottom {
 	height: 3rem;
 	width: 100%;
@@ -203,23 +256,23 @@ select {
 	background-color: #000000;  
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	padding: 4px 0 8px 0;
+	padding: 4rem 0 8rem 0;
 }
 
 .marqueeBottom .track5{
-  animation: marquee 10s linear infinite
+  animation: marquee 8s linear infinite
 }
 
 .marqueeBottom .track6{
-  animation: marquee 10s linear 2.5s infinite 
+  animation: marquee 8s linear 2s infinite 
 }
 
 .marqueeBottom .track7{
-  animation: marquee 10s linear 5s infinite
+  animation: marquee 8s linear 4s infinite
 }
 
 .marqueeBottom .track8{
-  animation: marquee 10s linear 7.5s infinite
+  animation: marquee 8s linear 6s infinite
 }
 
 
@@ -241,5 +294,4 @@ select {
   50% { left: -100%; }
   100% {left: -100%}
 }
-
 
