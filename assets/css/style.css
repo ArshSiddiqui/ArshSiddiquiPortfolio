@@ -1,6 +1,6 @@
 body{
 	background-color: #000000;
-	overflow: hidden;
+	
 }
 /* CSS RESET START */
 /* Box sizing rules */
@@ -112,7 +112,7 @@ select {
 	font-size: 1.5rem;
 }
 
-#ExperienceBtn {
+#GitHubBtn {
 	border-color: #FFFFFF;
 	border-style: solid;
 	background-color: #FFFFFF;
@@ -121,9 +121,9 @@ select {
 	width: 6rem;
 }
 
-#ContactBtn {
+#LinkedInBtn {
 	border-color: #FFFFFF;
-	border-style: solid;
+	border-style: none;
 	background-color: #000000;
 	color: #FFFFFF;
 	cursor: pointer;
@@ -141,35 +141,34 @@ select {
 }
 
 #top{
-	color: #FFFFFF;
+	color: #DEECFF;
 }
 
 .marquee {
-  height: 3rem;
-  width: 100%;
-
-  overflow: hidden;
-  position: relative;
-  background-color: #000000;  
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 8px 0 4px 0;
+	height: 3rem;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-color: #000000;  
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 4px 0 4px 0;
 }
 
 .marquee .track1{
-  animation: marquee 10s linear infinite
+	animation: marquee 10s linear infinite
 }
 
 .marquee .track2{
-  animation: marquee 10s linear 2.5s infinite 
+	animation: marquee 10s linear 2.5s infinite 
 }
 
 .marquee .track3{
-  animation: marquee 10s linear 5s infinite
+	animation: marquee 10s linear 5s infinite
 }
 
 .marquee .track4{
-  animation: marquee 10s linear 7.5s infinite
+	animation: marquee 10s linear 7.5s infinite
 }
 
 
@@ -191,3 +190,56 @@ select {
   50% { left: -100%; }
   100% {left: -100%}
 }
+
+
+#bot{
+	color: #DEECFF;
+}
+.marqueeBottom {
+	height: 3rem;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-color: #000000;  
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 4px 0 8px 0;
+}
+
+.marqueeBottom .track5{
+  animation: marquee 10s linear infinite
+}
+
+.marqueeBottom .track6{
+  animation: marquee 10s linear 2.5s infinite 
+}
+
+.marqueeBottom .track7{
+  animation: marquee 10s linear 5s infinite
+}
+
+.marqueeBottom .track8{
+  animation: marquee 10s linear 7.5s infinite
+}
+
+
+.marqueeBottom div {
+	position: absolute;
+	width: 100%;
+	left: 100%;
+	height: 7rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.marqueeBottom:hover div {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeBottom {
+  0% { left: 100%; }
+  50% { left: -100%; }
+  100% {left: -100%}
+}
+
+
