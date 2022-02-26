@@ -197,19 +197,19 @@ select {
 }
 
 .marquee .track1{
-	animation: marquee 6s linear infinite
+	animation: marquee 16s linear infinite
 }
 
 .marquee .track2{
-	animation: marquee 6s linear 1s infinite 
+	animation: marquee 16s linear 4s infinite 
 }
 
 .marquee .track3{
-	animation: marquee 6s linear 2s infinite
+	animation: marquee 16s linear 8s infinite
 }
 
 .marquee .track4{
-	animation: marquee 6s linear 4s infinite
+	animation: marquee 16s linear 12s infinite
 }
 
 
