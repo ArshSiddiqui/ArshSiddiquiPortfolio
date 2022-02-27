@@ -1,6 +1,9 @@
 body{
-	background-color: #000000;
-	overflow: hidden;
+	background-color: #FFFFFF;
+	overflow-y: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -105,11 +108,12 @@ select {
 }
 
 #exp{
-	font-family: 'Raleway', sans-serif;
-	color: #FFFFFF;
-	font-size: 8rem;
+	font-family: 'Noto Serif Display', sans-serif;
+	color: #000000;
+	font-size: 7rem;
 	writing-mode: vertical-rl;
 	text-orientation: sideways-left;
+	margin-left: 3rem;
 }
 
 
@@ -121,9 +125,9 @@ select {
 	align-items: center;
 	justify-content: center;
 	height: 95vh;
-	margin-left: 7rem;
+	margin-left: 3rem;
 	
-	background-image: url('https://images.unsplash.com/photo-1456614329731-54fa01840c6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80');
+	background-image: url('https://images.unsplash.com/photo-1639753470510-b819b2d83483?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3570&q=80');
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -131,16 +135,18 @@ select {
 	
 }
 
+
 #reseachtxt	{
 	font-family: 'BenchNine', sans-serif;
 	color: #FFFFFF;
-	font-size: 2rem;
+	font-size: 4rem;
 }
 
 #reseachdesc	{
 	font-family: 'BenchNine', sans-serif;
 	color: #FFFFFF;
-	font-size: 1rem;
+	font-size: 1.5rem;
+	width: 30rem;
 }
 
 
@@ -154,7 +160,7 @@ select {
 	justify-content: center;
 	height: 95vh;
 	
-	background-image: url('https://images.unsplash.com/photo-1550562533-0610534e716d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80');
+	background-image: url('https://images.unsplash.com/photo-1478032065388-b2b20832875d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80');
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -165,7 +171,7 @@ select {
 #persproj{
 	font-family: 'BenchNine', sans-serif;
 	color: #FFFFFF;
-	font-size: 2rem;
+	font-size: 4rem;
 }
 
 #TheOnionOrNot {
@@ -175,8 +181,8 @@ select {
 	color: #FFFFFF;
 	cursor: pointer;
 	font-family: 'Karla', sans-serif;
-	font-size: 1rem;
-	width: 20rem;
+	font-size: 1.5rem;
+	width: 30rem;
 }
 
 #TextGen {
@@ -186,8 +192,8 @@ select {
 	color: #FFFFFF;
 	cursor: pointer;
 	font-family: 'Karla', sans-serif;
-	font-size: 1rem;
-	width: 20rem;
+	font-size: 1.5rem;
+	width: 30rem;
 }
 
 #BreakdancingFallingOver {
@@ -197,7 +203,142 @@ select {
 	color: #FFFFFF;
 	cursor: pointer;
 	font-family: 'Karla', sans-serif;
-	font-size: 1rem;
-	width: 20rem;
+	font-size: 1.5rem;
+	width: 40rem;
 }
 
+/* ------------------------------------ Education ------------------------------------*/
+
+#edu{
+	font-family: 'Noto Serif Display', sans-serif;
+	color: #000000;
+	font-size: 7rem;
+	margin-left: 3rem;
+	writing-mode: vertical-rl;
+	text-orientation: sideways-left;
+}
+
+
+
+/* ------------------------------------ Virginia Tech ------------------------------------*/
+
+.VTech {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+	margin-left: 3rem;
+	
+	background-image: url('https://images.unsplash.com/photo-1578845333772-a0c0917fa872?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80');
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	
+}
+
+#VTechText	{
+	font-family: 'BenchNine', sans-serif;
+	color: #FFFFFF;
+	font-size: 4rem;
+}
+
+#VTechDesc	{
+	font-family: 'BenchNine', sans-serif;
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	width: 30rem;
+}
+
+
+/* ------------------------------------ South Lakes High School ------------------------------------*/
+
+.SLHS {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+	
+	background-image: url('https://images.unsplash.com/photo-1577553310773-3b0410c58343?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80');
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	
+}
+
+#SLHSText	{
+	font-family: 'BenchNine', sans-serif;
+	color: #FFFFFF;
+	font-size: 4rem;
+}
+
+#SLHSDesc	{
+	font-family: 'BenchNine', sans-serif;
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	width: 30rem;
+}
+
+
+#blank	{
+	font-family: 'BenchNine', sans-serif;
+	color: #FFFFFF;
+	font-size: 1rem;
+	width: 80rem;
+}
+
+
+
+
+/* -------------------------------Marquees-------------------------------- */
+
+#top{
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	cursor: pointer;
+}
+
+.marqueeScroll {
+	height: 3rem;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background: none;
+	border-top: 1px solid black;
+}
+
+.marqueeScroll .track1{
+	animation: marquee 20s linear infinite
+}
+
+.marqueeScroll .track2{
+	animation: marquee 20s linear 5s infinite 
+}
+
+.marqueeScroll .track3{
+	animation: marquee 20s linear 10s infinite
+}
+
+.marqueeScroll .track4{
+	animation: marquee 20s linear 15s infinite
+}
+
+
+.marqueeScroll div {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes marquee {
+  0% { left: 100%; }
+  50% { left: -100%; }
+  100% {left: -100%}
+}
