@@ -2,9 +2,6 @@ body{
 	background-color: #FFFFFF;
 	overflow-y: hidden;
 }
-::-webkit-scrollbar {
-    display: none;
-}
 
 
 /* -------------------------CSS RESET START------------------------- */
@@ -216,9 +213,8 @@ select {
 	margin-left: 3rem;
 	writing-mode: vertical-rl;
 	text-orientation: sideways-left;
+	margin-left: 3rem;
 }
-
-
 
 /* ------------------------------------ Virginia Tech ------------------------------------*/
 
