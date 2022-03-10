@@ -117,6 +117,7 @@ select {
 	writing-mode: vertical-rl;
 	text-orientation: sideways-left;
 	margin-left: 3rem;
+	margin-right: 1rem;
 }
 
 
