@@ -102,7 +102,6 @@ select {
 	align-items: center;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	clear:both;
 }
 
 #exp{
@@ -211,7 +210,6 @@ select {
 	writing-mode: vertical-rl;
 	text-orientation: sideways-left;
 	margin-left: 3rem;
-	clear:both;
 }
 
 /* ------------------------------------ Virginia Tech ------------------------------------*/
