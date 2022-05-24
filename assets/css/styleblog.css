@@ -161,3 +161,29 @@ select {
 .stockSmoothingCodeWritten {
 	font-size: 1rem;
 }
+
+.stockLogReturnsCode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: top;
+}
+
+.stockLogReturnsDescription {
+	font-size: 1rem;
+}
+
+.stockNumberReturnsDescription {
+	font-size: 1rem;
+}
+
+.stockExponentialReturnsCode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: top;
+}
+
+.stockExponentialReturnsDescription {
+	font-size: 1rem;
+}
