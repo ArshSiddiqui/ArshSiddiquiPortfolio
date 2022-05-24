@@ -84,18 +84,62 @@ select {
 
 /* -------------------------TOP BAR BEGINNING------------------------- */
 .topbar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	height: 9rem;
+	background-color: #000000;
+}
+
+.topContainer {
+	max-width: 75ch;
+	margin: 2rem auto;
 	justify-content: top;
-	height: 8rem;
+	height: 9rem;
 	background-color: #000000;
 }
 
 .nameContainer {
 	font-family: 'Raleway', sans-serif;
 	color: #FFFFFF;
-	font-size: 4.5em;
+	font-size: 4em;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 3rem;
+}
+
+.buttons > * + * {
+	margin-left: 1rem;
+}
+
+#writingBtn, #projectsBtn {
+	border: none;
+	background-color: #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: 'Karla', sans-serif;
+	font-size: 1rem;
+	width: 4rem;
+}
+
+#writingBtn:hover, #projectsBtn:hover {
+	animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+	0% {color:  #edaeae ; }
+	8% {color:  #edd1ae ; }
+	16% {color:  #ede5ae ; }
+	24% {color:  #d6edae ; }
+	32% {color:  #bcedae ; }
+	40% {color:  #aeedd0 ; }
+	48% {color:  #aeede5  ; }
+	56% {color:   #aed9ed  ; }
+	64% {color:   #aeb7ed  ; }
+	72% {color:   #beaeed  ; }
+	80% {color:   #e0aeed  ; }
+	88% {color:  #edaed6  ; }
+	100% {color:    #edaeae   ; }
 }
 
 /* -------------------------TOP BAR END------------------------- */
@@ -133,7 +177,7 @@ select {
 }
 
 .stockDataCodeWritten {
-	font-size: 1rem;
+	font-size: .9rem;
 }
 
 .stockDataDataframe {
@@ -159,7 +203,7 @@ select {
 }
 
 .stockSmoothingCodeWritten {
-	font-size: 1rem;
+	font-size: .9rem;
 }
 
 .stockLogReturnsCode {
@@ -170,11 +214,11 @@ select {
 }
 
 .stockLogReturnsDescription {
-	font-size: 1rem;
+	font-size: .9rem;
 }
 
 .stockNumberReturnsDescription {
-	font-size: 1rem;
+	font-size: .9rem;
 }
 
 .stockExponentialReturnsCode {
@@ -185,5 +229,16 @@ select {
 }
 
 .stockExponentialReturnsDescription {
-	font-size: 1rem;
+	font-size: .9rem;
+}
+
+.stockVolatilityCode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: top;
+}
+
+.stockVolatilityDescription {
+	font-size: .9rem;
 }
