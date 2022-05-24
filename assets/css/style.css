@@ -126,16 +126,6 @@ select {
 	font-size: 10rem;
 }
 
-#titlebtn {
-	border-color: #FFFFFF;
-	border-style: none;
-	background: none;
-	cursor: pointer;
-}
-#titlebtn:active{
-	background-color: #F3EFE4;
-}
-
 #description{
 	font-family: 'BenchNine', sans-serif;
 	color: #FFFFFF;
