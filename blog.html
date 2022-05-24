@@ -5,9 +5,59 @@
 		<title>Arsh Siddiqui's Blog</title>
 		
 		<link rel="stylesheet" href="assets/css/styleblog.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Karla&family=Noto+Serif+Display:wght@900&family=Raleway:wght@900&display=swap" rel="stylesheet">
+		
 	</head>
 	
 	<body>
+	
+		<div class="topbar">
+		
+			<div class="nameContainer">
+				<p id="name">Arsh Siddiqui</p>
+			</div>
+			
+		</div>
+		
+		<div class="stockAnalysis">
+		
+			<div class="stockAnalysisTitleContainer">
+				<p id="stockAnalysisTitle">Stock Analysis</p>
+			</div>
+			
+			<div class="stockAnalysisDescription">
+			
+				<p>Given the ubiquity of the financial market in our day to day lives, and with my personal interest in stocks
+					I figured that now would be as good of a time as any to learn how to analyze stocks with code.</br>
+					Given its current ubiquity in the field and with its abundance of libraries that would make learning more
+					about this field, I elected to proceed with Python. One of the main reasons for this choice, outside of
+					what I had just outlined, is that using the <code>Pandas</code> library allows us to quickly and easily 
+					gain stock information for a given stock for a period of time.</br></br></p>
+				
+				<div class="stockDataCode">
+					
+					<code class="language-python">
+						from pandas_datareader import data </br>
+						import datetime </br>
+						</br>
+						today = datetime.date.today() </br>
+						start_date = str(today - datetime.timedelta(1000)) </br>
+						end_date = str(today) </br>
+						</br>
+						panel_data = data.DataReader('AAPL', 'yahoo', start_date, end_date) </br>
+						panel_data </br>
+					</code>
+					
+				</div>
+				
+				<p></p>
+		
+		</div>
+		
+	
 	</body>
 	
 </html>
