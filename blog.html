@@ -48,12 +48,17 @@
 						end_date = str(today) </br>
 						</br>
 						panel_data = data.DataReader('AAPL', 'yahoo', start_date, end_date) </br>
-						panel_data </br>
+						panel_data </br> </br>
 					</code>
 					
 				</div>
 				
-				<p></p>
+				<p>With this data gained, we can quickly single out the <code>Close</code> column such that we can start visualizing
+					our stock data. Sometimes when looking at stock data, or when visualizing it, we may want to smooth out the data
+					so that we can avoid shifted perceptions due to temporary changes in stock valuation. This may offer us a more
+					comprehensive look at our data, that is not skewed by any minor blip. </br>
+					We can change the duration of the rolling average, based upon how much smoothing we may want. For example, we could
+					have a shorter smoothing of just 20 days, or longer smoothing of 100 days.</p>
 		
 		</div>
 		
