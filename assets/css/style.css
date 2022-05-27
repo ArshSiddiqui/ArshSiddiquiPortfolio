@@ -228,19 +228,19 @@ select {
 }
 
 .marquee .track1{
-	animation: marquee 20s linear infinite
+	animation: marquee 30s linear infinite
 }
 
 .marquee .track2{
-	animation: marquee 20s linear 5s infinite 
+	animation: marquee 30s linear 7.5s infinite 
 }
 
 .marquee .track3{
-	animation: marquee 20s linear 10s infinite
+	animation: marquee 30s linear 15s infinite
 }
 
 .marquee .track4{
-	animation: marquee 20s linear 15s infinite
+	animation: marquee 30s linear 22.5s infinite
 }
 
 
