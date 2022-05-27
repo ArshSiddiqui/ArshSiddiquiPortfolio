@@ -1,5 +1,5 @@
 body{
-	background-color: #000000;
+	background-color: #FFFFFF;
 	overflow: hidden;
 }
 
@@ -85,21 +85,19 @@ select {
 
 /* -------------------------TOP BAR BEGINNING------------------------- */
 .main {
-	background-color: #FFFFFF;
-	height: 100vh;
 }
 
 
 .topbar {
-	height: 9rem;
+	height: 8rem;
 	background-color: #000000;
 }
 
 .topContainer {
 	max-width: 75ch;
-	margin: 2rem auto;
+	margin: 0rem auto;
 	justify-content: top;
-	height: 9rem;
+	height: 8rem;
 	background-color: #000000;
 }
 
