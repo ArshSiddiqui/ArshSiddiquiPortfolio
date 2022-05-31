@@ -168,7 +168,7 @@ select {
 }
 
 @keyframes color-change {
-	0% {color:  #edaeae ; }
+	0% {color:  #FFFFFF ; }
 	8% {color:  #edd1ae ; }
 	16% {color:  #ede5ae ; }
 	24% {color:  #d6edae ; }
