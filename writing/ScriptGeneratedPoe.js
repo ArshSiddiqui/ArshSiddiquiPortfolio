@@ -14,17 +14,19 @@ function readTextFile(file, callback) {
 }
 
 console.log("-------------------------------");
-readTextFile("https://raw.githubusercontent.com/ArshSiddiqui/TheSunNeverSetsOnTheAmericanMilitaryBase/main/AmericanBases.json", function(text) {
+readTextFile("https://raw.githubusercontent.com/ArshSiddiqui/GeneratedPoe/main/haikus.json", function(text) {
 	console.log("inside");
 	var data = JSON.parse(text);
-	console.log(text);
+	console.log(data[0].line);
 	var timeout = 1000;
 	var randNum = Math.floor(Math.random() * 129 / 3);
 	var poemIndex = randNum * 3;
 	for (var i = 0; i < 3; i++) {
 		const item = document.createElement("p");
-		const node = document.createTextNode(poemIndex + i);
+		const node = document.createTextNode(data[poemIndex + i].line);
 		item.appendChild(node);
+		const elem = document.getElementById("poem");
+		elem.appendChild(item);
 		console.log(node);
 	}
 })

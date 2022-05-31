@@ -170,49 +170,25 @@ select {
 
 
 
-/* -------------------------THE ONION BEGINNING------------------------- */
-.OnionPanel {
+/* -------------------------GENERATED POE BEGINNING------------------------- */
+.main {
 	max-width: 75ch;
 	margin: 2rem auto;
 	justify-content: top;
-	height: 5rem;
-}
-
-#onionBtn {
-	border: none;
+	height: 8rem;
 	background-color: #FFFFFF;
-	color: #000000;
-	cursor: pointer;
+}
+
+.generatedPoeTitleContainer {
 	font-family: 'Karla', sans-serif;
-	font-size: 1rem; 
+	color: #000000;
+	font-size: 2rem;
+	margin: 1em 0 0.5em;
 }
 
-#onionBtn:hover {
-	background-color: #000000;
-	animation: color-change 5s infinite;
-}
-
-/* -------------------------THE ONION END------------------------- */
-
-
-/* -------------------------BREAKDANCING BEGINNING------------------------- */
-.DancePanel {
+.poem {
+	font-family: 'Karla', sans-serif;
+	color: #000000;
+	font-size: 1rem;
 	max-width: 75ch;
-	margin: 2rem auto;
-	justify-content: top;
-	height: 5rem;
-}
-
-#danceBtn {
-	border: none;
-	background-color: #FFFFFF;
-	color: #000000;
-	cursor: pointer;
-	font-family: 'Karla', sans-serif;
-	font-size: 1rem; 
-}
-
-#danceBtn:hover {
-	background-color: #000000;
-	animation: color-change 5s infinite;
 }

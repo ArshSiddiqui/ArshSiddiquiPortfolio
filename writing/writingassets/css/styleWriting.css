@@ -166,14 +166,14 @@ select {
 
 
 /* -------------------------Writing BEGINNING------------------------- */
-.StockAnalysis {
+.site {
 	max-width: 75ch;
 	margin: 2rem auto;
 	justify-content: top;
 	height: 5rem;
 }
 
-#StockAnalysisBtn {
+#button {
 	border: none;
 	background-color: #FFFFFF;
 	color: #000000;
@@ -182,7 +182,7 @@ select {
 	font-size: 1rem; 
 }
 
-#StockAnalysisBtn:hover {
+#button:hover {
 	background-color: #000000;
 	animation: color-change 5s infinite;
 }
