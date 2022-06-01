@@ -170,15 +170,15 @@ select {
 
 
 
-/* -------------------------THE ONION BEGINNING------------------------- */
-.OnionPanel {
+/* -------------------------PANEL BEGINNING------------------------- */
+.panel {
 	max-width: 75ch;
 	margin: 2rem auto;
 	justify-content: top;
 	height: 5rem;
 }
 
-#onionBtn {
+#btn {
 	border: none;
 	background-color: #FFFFFF;
 	color: #000000;
@@ -187,32 +187,9 @@ select {
 	font-size: 1rem; 
 }
 
-#onionBtn:hover {
+#btn:hover {
 	background-color: #000000;
 	animation: color-change 5s infinite;
 }
 
-/* -------------------------THE ONION END------------------------- */
-
-
-/* -------------------------BREAKDANCING BEGINNING------------------------- */
-.DancePanel {
-	max-width: 75ch;
-	margin: 2rem auto;
-	justify-content: top;
-	height: 5rem;
-}
-
-#danceBtn {
-	border: none;
-	background-color: #FFFFFF;
-	color: #000000;
-	cursor: pointer;
-	font-family: 'Karla', sans-serif;
-	font-size: 1rem; 
-}
-
-#danceBtn:hover {
-	background-color: #000000;
-	animation: color-change 5s infinite;
-}
+/* -------------------------PANEL END------------------------- *
