@@ -191,3 +191,25 @@ select {
 	font-size: 1rem;
 	max-width: 75ch;
 }
+
+.generatedPoeDescription {
+	font-family: 'Karla', sans-serif;
+	color: #000000;
+	font-size: 1rem;
+	max-width: 75ch;
+}
+
+.sentence {
+	font-family: 'Karla', sans-serif;
+	color: #000000;
+	font-size: .75rem;
+	max-width: 75ch;
+}
+
+.generatedPoeCode {
+	font-size: .75rem;
+}
+
+.generatedPoeOutput {
+	font-size: .9rem;
+}
