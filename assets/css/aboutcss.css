@@ -130,12 +130,13 @@ select {
 	position: fixed;
 	top: 5rem;
 	right: 5rem;
-	width: 15rem;
+	width: 20rem;
 }	
 
 /* ------------------------------------- Image ------------------------------------- */
 #itsme {
-	margin-left: 1.5rem;
-	height: 40rem;
+	margin-left: 4rem;
+	margin-top: 4rem;
+	height: 30rem;
 	width: auto;
 }	
