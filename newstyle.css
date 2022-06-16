@@ -224,7 +224,7 @@ select {
 
 /* -------------------------------Bottom-------------------------------- */
 .bottom-card {
-    height: 60vw;
+    height: 59vw;
     width: 110%;
     background-color: rgb(63, 28, 10);
     position: relative;
@@ -237,9 +237,14 @@ select {
 .text {
     color: rgb(243, 235, 218);
     font-size: 3rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     cursor: default;
 }
+
+.textN {
+    font-family: 'BenchNine', sans-serif;
+}
+
 
 
 /*------------------Contact Circle---------------------*/
