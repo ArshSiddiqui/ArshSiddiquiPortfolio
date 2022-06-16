@@ -6,9 +6,9 @@ document.getElementById("description").innerHTML = descriptions[randNum];
 
 
 // Contact Movement
-const customPointer = document.getElementById("contact");
-let pointerX;
-let pointerY;
+// const customPointer = document.getElementById("contact");
+// let pointerX;
+// let pointerY;
 
 // document.onmousemove = function (event) {
 //     pointerX = event.pageX;
@@ -16,3 +16,4 @@ let pointerY;
 
 //     customPointer.style.transform = `translate3d(${pointerX}px, ${pointerY}px, 0)`;
 // };
+
