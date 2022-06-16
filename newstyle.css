@@ -234,29 +234,30 @@ select {
     margin-right: auto;
     width: 85%;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 
 /* -------------------------------Marquee and Bottom-------------------------------- */
-#bottom {
-    background-color: rgb(63, 28, 10);
+#bottomCard {
+    /* background-color: rgb(63, 28, 10);
     position: fixed;
     bottom: 0;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; */
+    position: relative;
 }
 
 #top{
 	color: rgb(243, 235, 218);
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-	cursor: pointer;
+	cursor: default;
     
 }
 
 .marquee {
-    margin-top: 2rem;
-	height: 3rem;
+	height: 4rem;
 	width: 80%;
 	overflow: hidden;
 	margin-left: auto;
@@ -272,29 +273,24 @@ select {
 }
 
 .marquee .track2{
-	animation: marquee 30s linear 7.5s infinite 
+	animation: marquee 30s linear 6s infinite 
 }
 
 .marquee .track3{
-	animation: marquee 30s linear 15s infinite
+	animation: marquee 30s linear 12s infinite
 }
 
 .marquee .track4{
-	animation: marquee 30s linear 22.5s infinite
+	animation: marquee 30s linear 18s infinite
 }
 
 
 .marquee div {
   position: absolute;
-  width: 100%;
+  width: 75%;
   left: 100%;
-  height: 7rem;
   display: flex;
   justify-content: space-between;
-}
-
-.marquee:hover div {
-  animation-play-state: paused;
 }
 
 @keyframes marquee {
@@ -302,3 +298,60 @@ select {
   50% { left: -100%; }
   100% {left: -100%}
 }
+
+.rev {
+	height: 3rem;
+	width: 80%;
+	overflow: hidden;
+	margin-left: auto;
+    margin-right: auto;
+	background-color: rgb(63, 28, 10);
+	border-top: 1px solid rgba(0, 0, 0, 0);
+	border-bottom: 0.4rem;
+	padding: 0.2rem 0 1rem 0;
+}
+
+.rev .track1{
+	animation: marqueeRev 30s linear infinite
+}
+
+.rev .track2{
+	animation: marqueeRev 30s linear 6s infinite 
+}
+
+.rev .track3{
+	animation: marqueeRev 30s linear 12s infinite
+}
+
+.rev .track4{
+	animation: marqueeRev 30s linear 18s infinite
+}
+
+.rev div {
+    position: absolute;
+    width: 75%;
+    right: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes marqueeRev {
+    0% { right: 100%; }
+    50% { right: -100%; }
+    100% {right: -100%}
+  }
+
+
+/*------------------Contact Circle---------------------*/
+.contact {
+    width: 20rem;
+    height: 10rem;
+    line-height: 10rem;
+    text-align: center;
+    background-color:rgb(243, 235, 218);
+    color:rgb(63, 28, 10);
+    transition: 100ms;
+    margin: auto;
+    position: absolute;
+    left: 40%;
+  }
