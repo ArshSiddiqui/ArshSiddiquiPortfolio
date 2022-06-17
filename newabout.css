@@ -108,16 +108,16 @@ select {
 	color: #2C400C;
 	font-size: 1.5rem;
 	top: 2rem;
-    left: 2rem;
-    width: 40rem;
-    position: fixed;
+  left: 2rem;
+  width: 40rem;
+  position: fixed;
 }
 
 
 /* -------------------------Image------------------------- */
 #itsme {
 	margin-top: 2rem;
-    margin-right: -50rem;
+  margin-right: -50rem;
 	height: 30rem;
 	width: auto;
 }	
