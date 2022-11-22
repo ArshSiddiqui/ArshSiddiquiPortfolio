@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Monopoly</title>
+			
+		<link rel="stylesheet" href="writingassets/css/generalstyle.css">
+			
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Karla&family=Noto+Serif+Display:wght@900&family=Raleway:wght@900&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="../assets/images/black.png">
+
+	</head>
+	
+	<body>
+	
+		<div class="topbar">
+			
+			<div class="topContainer">
+			
+				<div class="nameContainer">
+					<button type="button" id="nameBtn" onclick="window.location.href = '../index.html';">
+						<p id="name">Arsh Siddiqui</p>
+					</button>
+				</div>
+				
+				<div class="buttons">
+				
+					<div class="writing">
+						<button type="button" id="writingBtn" onclick="window.location.href = 'writing.html';">
+							<span id="spanWriting">Writing</span>
+						</button>
+					</div>
+					
+					<div class="projects">
+						<button type="button" id="projectsBtn" onclick="window.location.href = 'projects.html';">
+							<span id="spanProjects">Other Websites</span>
+						</button>
+					</div>
+					
+				</div>
+			
+			</div>
+			
+		</div>
+    
+		<div class="main">
+		
+			<div class="titleContainer">
+				<p id="title">What squares are landed on the most in Monopoly?</br></p>
+			</div>
+			
+			<div class="description">
+			
+				<p></br>I am pretty bad at Monopoly myself, and I had been lately learning more about how to improve my game.
+                        One interesting consideration to have when it comes to playing Monopoly is to consider which squares
+                        are landed upon the most. I typically spend my games trying to purchase squares near the end of the 
+                        board, because if anybody lands on them I get a higher payout, but is that mentality necessarily
+                        true?</br></br>
+                        As it turns out, no.</br></br>
+                        We might imagine that as we roll the die, there would be an even spread of chance for landing on any
+                        particular square on the board. This would be true if we never had external forces moving us around the 
+                        board and if we were only following the whim of the die.<br><br>
+                        Consider that if we roll doubles thrice, we go to jail, and there are special cards and circumstances
+                        that would send us back to the beginning of the board. This leads us to having a skew to the home
+                        position and to the jail location. Considering these pieces of information, upon exiting them with 
+                        another role of the die, we may find a lot of our locations clustered around the following spots on
+                        the board.<br><br>
+                        Knowing this information, we can then create a Python script that contains knowledge of all of the 
+                        positions on the board and of all of the chance and community chest cards to effectively play the game
+                        some number of times counting up each spot we land on to determine which spots are landed upon the most
+                        frequently.</br></br>
+                        The following are the results that I have attained from the code: </br></br></p>
+			
+			</div>
+
+            <div class="MonopolyScore">
+
+                <p>
+                    Square<p align="right">Probability of Landing</p>
+                    Jail / Just Visiting <p align="right">6.7%</p>
+                    Go <p align="right">3.11%</p>
+                    Jail / Just Visiting <p align="right">6.7%</p>
+                    Go <p align="right">6.7%</p>
+                    Reading Railroad <p align="right">2.88%</p>
+                    Illinois Avenue <p align="right">2.82%</p>
+                    St. Charles Place <p align="right">2.73%</p>
+                    Boardwalk <p align="right">2.7%</p>
+                    Short Line <p align="right">2.65%</p>
+                    New York Avenue <p align="right">2.6%</p>
+                    Water Works <p align="right">2.54%</p>
+                    Tennessee Avenue <p align="right">2.47%</p>
+                    Free Parking <p align="right">2.45%</p>
+                    Community Chest <p align="right">2.44%</p>
+                    Community Chest - 2 <p align="right">2.43%</p>
+                    St. James Place <p align="right">2.39%</p>
+                    Electric Company <p align="right">2.39%</p>
+                    Kentucky Avenue <p align="right">2.39%</p>
+                    Chance <p align="right">2.38%</p>
+                    Chance - 2 <p align="right">2.35%</p>
+                    Income Tax <p align="right">2.35%</p>
+                    Vermont Avenue <p align="right">2.35%</p>
+                    Pennsylvania Railroad <p align="right">2.34%</p>
+                    Indiana Avenue <p align="right">2.33%</p>
+                    Connecticut Avenue <p align="right">2.3%</p>
+                    Chance - 3 <p align="right">2.29%</p>
+                    Oriental Avenue <p align="right">2.29%</p>
+                    B. & O. Railroad <p align="right">2.29%</p>
+                    Atlantic Avenue <p align="right">2.28%</p>
+                    Pennsylvania Avenue <p align="right">2.27%</p>
+                    Park Place <p align="right">2.26%</p>
+                    North Carolina Avenue <p align="right">2.26%</p>
+                    Pacific Avenue <p align="right">2.26%</p>
+                    Virginia Avenue <p align="right">2.24%</p>
+                    Luxury Tax <p align="right">2.23%</p>
+                    Ventnor Avenue <p align="right">2.23%</p>
+                    Go To Jail <p align="right">2.22%</p>
+                    States Avenue <p align="right">2.2%</p>
+                    Marvin Gardens <p align="right">2.18%</p>
+                    Community Chest - 3 <p align="right">2.15%</p>
+                    Mediterranean Avenue <p align="right">2.14%</p>
+                    Baltic Avenue <p align="right">2.12%</p>
+                </p>
+
+            </div>
+			
+			<code class="generatedPoeCode">
+				
+				for line in file:</br>
+					for w1, w2, w3 in trigrams(line.lower().split(), pad_right=True, pad_left=True):</br>
+					model[(w1, w2)][w3] += 1</br>	
+				</br>
+				total_occurence = 0</br>
+				for occurence in model['the', 'day'].values():</br>
+					total_occurence += occurence</br>
+				</br>
+				for w1w2 in model:</br>
+					for w3 in model[w1w2]:</br>
+						model[w1w2][w3] = model[w1w2][w3] / total_occurence</br>
+				</br>
+				dict(model['and', 'then'])</br>
+				</br>
+				
+			</code>
+			
+			<div class="generatedPoeOutput">
+				
+				<p>
+				{'went': 0.015151515151515152,</br>
+				 'obtain': 0.015151515151515152,</br>
+				 'i': 0.12121212121212122,</br>
+				 'returned,': 0.015151515151515152,</br>
+				 'from': 0.030303030303030304,</br>
+				 'caught': 0.015151515151515152,</br>
+				 'the': 0.16666666666666666,</br>
+				 'universal': 0.015151515151515152,</br>
+				 'felt': 0.015151515151515152,</br>
+				 None: 0.12121212121212122,</br>
+				 ...</br>
+				 'producing': 0.015151515151515152}</br></br>
+				</p>
+				
+			</div>
+			
+			<div class="description">
+			
+				<p></br>This code firstly goes through every line in the text file and splits the words up in very similar fashio to that
+					of the "There is a dog named Allen" example I'd previously shown. The rest of the code takes every single possible third
+					word to the first two words in the trigram, and determines the probability and word will come next based upon the total
+					number of possibilities. This can be seen in the output, which is showing all of the possible concluding words to the two
+					words "and" and "then". Each word is correlated to a probability of its occurence. The "None" which can be seen as well just
+					dictates the end of the sentence.</br></br></p>
+				
+			</div>
+			
+			<code class="generatedPoeCode">
+				
+				def create_sentence(word1, word2):</br>
+					sentence = [word1, word2]</br>
+					sentence_complete = False</br>
+					total_words = 0</br>
+					num_words = 2</br>
+				</br>
+					while not sentence_complete:</br>
+						min_words = random.random()</br>
+				</br>
+						for word in model[tuple(sentence[num_words - 2:])].keys():</br>
+				</br>
+							total_words += model[tuple(sentence[num_words - 2:])][word]</br>
+				</br>
+							if total_words >= min_words:</br>
+								sentence.append(word)</br>
+								num_words += 1</br>
+								break</br>
+				</br>
+						if sentence[num_words - 2:] == [None, None]:</br>
+							sentence_complete = True</br>
+				</br>
+					sentence_str = ""</br>
+					for word in sentence:</br>
+						if word != None:</br>
+							sentence_str = sentence_str + word + " "</br>
+				</br>
+					print("create_sentence:", sentence_str)</br>
+				</br>					
+					return sentence</br>
+				</br>
+				
+			</code>
+			
+			<div class="description">
+			
+				<p></br>This is finally the code that creates our sentences. What we are effectively doing is setting a random probability
+					that we want each of our next words to achieve at a threshold. Then we continuously add these words to a list that will become
+					our sentence. The sentence ends once we hit the word "None" (which refers to no word) twice. </br></br>
+					This is similar to what we had done for the Monte Cristo trigam model, but I have changed some of the methods involved for
+					simplicities sake. </br></br>
+					The rest of the program will generate a sentence using the above function, checks how many syllables are in each word, and then
+					attempt to create the three haiku lines with those words in their proper order. If it can't, it scraps that sentence and generates
+					a new one. This keeps going until a haiku is created. You can see some of the haikus that the algorithm generated by reloading this
+					and looking at the top of this page.</br></br></p>
+				
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
