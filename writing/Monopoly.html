@@ -74,10 +74,10 @@
 			
 			</div>
 
-            <div class="MonopolyScore">
+            <div class="Details">
 
                 <p>
-                    Square<p align="right">Probability of Landing</p>
+                    <u><b>Square</b></u></Square><p align="right"><u><b>Probability of Landing</b></u></p>
                     Jail / Just Visiting <p align="right">6.7%</p>
                     Go <p align="right">3.11%</p>
                     Jail / Just Visiting <p align="right">6.7%</p>
@@ -123,104 +123,172 @@
                 </p>
 
             </div>
+
+            <div class="description">
 			
-			<code class="generatedPoeCode">
-				
-				for line in file:</br>
-					for w1, w2, w3 in trigrams(line.lower().split(), pad_right=True, pad_left=True):</br>
-					model[(w1, w2)][w3] += 1</br>	
-				</br>
-				total_occurence = 0</br>
-				for occurence in model['the', 'day'].values():</br>
-					total_occurence += occurence</br>
-				</br>
-				for w1w2 in model:</br>
-					for w3 in model[w1w2]:</br>
-						model[w1w2][w3] = model[w1w2][w3] / total_occurence</br>
-				</br>
-				dict(model['and', 'then'])</br>
-				</br>
-				
-			</code>
+				<p></br>The code that produced the above results follows:</br></br></p>
 			
-			<div class="generatedPoeOutput">
-				
-				<p>
-				{'went': 0.015151515151515152,</br>
-				 'obtain': 0.015151515151515152,</br>
-				 'i': 0.12121212121212122,</br>
-				 'returned,': 0.015151515151515152,</br>
-				 'from': 0.030303030303030304,</br>
-				 'caught': 0.015151515151515152,</br>
-				 'the': 0.16666666666666666,</br>
-				 'universal': 0.015151515151515152,</br>
-				 'felt': 0.015151515151515152,</br>
-				 None: 0.12121212121212122,</br>
-				 ...</br>
-				 'producing': 0.015151515151515152}</br></br>
-				</p>
-				
-			</div>
-			
-			<div class="description">
-			
-				<p></br>This code firstly goes through every line in the text file and splits the words up in very similar fashio to that
-					of the "There is a dog named Allen" example I'd previously shown. The rest of the code takes every single possible third
-					word to the first two words in the trigram, and determines the probability and word will come next based upon the total
-					number of possibilities. This can be seen in the output, which is showing all of the possible concluding words to the two
-					words "and" and "then". Each word is correlated to a probability of its occurence. The "None" which can be seen as well just
-					dictates the end of the sentence.</br></br></p>
-				
 			</div>
 			
 			<code class="generatedPoeCode">
 				
-				def create_sentence(word1, word2):</br>
-					sentence = [word1, word2]</br>
-					sentence_complete = False</br>
-					total_words = 0</br>
-					num_words = 2</br>
-				</br>
-					while not sentence_complete:</br>
-						min_words = random.random()</br>
-				</br>
-						for word in model[tuple(sentence[num_words - 2:])].keys():</br>
-				</br>
-							total_words += model[tuple(sentence[num_words - 2:])][word]</br>
-				</br>
-							if total_words >= min_words:</br>
-								sentence.append(word)</br>
-								num_words += 1</br>
-								break</br>
-				</br>
-						if sentence[num_words - 2:] == [None, None]:</br>
-							sentence_complete = True</br>
-				</br>
-					sentence_str = ""</br>
-					for word in sentence:</br>
-						if word != None:</br>
-							sentence_str = sentence_str + word + " "</br>
-				</br>
-					print("create_sentence:", sentence_str)</br>
-				</br>					
-					return sentence</br>
-				</br>
-				
+				import random</br>
+                </br>
+                # list of all spots in Monopoly</br>
+                spots = ["Go", "Mediterranean Avenue", "Community Chest", "Baltic Avenue", "Income Tax",
+                            "Reading Railroad", "Oriental Avenue", "Chance", "Vermont Avenue", "Connecticut Avenue",
+                            "Jail / Just Visiting", "St. Charles Place", "Electric Company", "States Avenue", "Virginia Avenue",
+                            "Pennsylvania Railroad", "St. James Place", "Community Chest", "Tennessee Avenue", "New York Avenue",
+                            "Free Parking", "Kentucky Avenue", "Chance", "Indiana Avenue", "Illinois Avenue", "B. & O. Railroad",
+                            "Atlantic Avenue", "Ventnor Avenue", "Water Works", "Marvin Gardens", "Go To Jail", "Pacific Avenue",
+                            "North Carolina Avenue", "Community Chest", "Pennsylvania Avenue", "Short Line", "Chance",
+                            "Park Place", "Luxury Tax", "Boardwalk"]</br>
+                </br>
+                # list of all utility locations</br>
+                utilites = [13, 29]</br>
+                </br>
+                # list of all railroad locations</br>
+                railroads = [6, 16, 26, 36]</br>
+                </br>
+                # List of all chance cards by location you move to, 0 correlates to no movement</br>
+                chance_cards = [40, 1, 25, 12, "Railroad", "utility", 0, "jail free", -3, 11, 0, 6, 0, 0]</br>
+            </br>
+                # List of all community chest cars, as of 2021</br>
+                community_chest = [0, 0, 0, 0, "jail free", 0, 11, 0, 0, 0, 0, 1, 0, 0, 0, 0] </br>
+            </br>
+                times_on = []</br>
+                for i in range(0, len(spots)):</br>
+                    times_on.append(0)</br>
+                </br>
+                num_rolls = 1000000</br>
+                num_repeats = 0</br>
+                tot_repeats = 0</br>
+                times_jailed = 0</br>
+                jail_free = False</br>
+                # curr_space = 0</br>
+                while i < num_rolls:</br>
+                    dice_1 = random.randint(1, 6)</br>
+                    dice_2 = random.randint(1, 6)</br>
+                    curr_space = (curr_space + dice_1 + dice_2) % 40</br>
+                </br>
+                    times_on[curr_space - 1] += 1</br>
+                </br>
+                    if spots[curr_space - 1] == "Chance":</br>
+                        rand_chance = random.randint(0, len(chance_cards) - 1)</br>
+                        item = chance_cards[rand_chance]</br>
+                        if isinstance(item, str):</br>
+                            if item == "Railroad":</br>
+                                if curr_space > 36:</br>
+                                    curr_space = 6</br>
+                                else:</br>
+                                    for train in railroads:</br>
+                                        if curr_space < train:</br>
+                                            curr_space = train</br>
+                                times_on[curr_space - 1] += 1</br>
+                            </br>
+                            elif item == "utility":</br>
+                                if curr_space > 29:</br>
+                                    curr_space = 13</br>
+                                else:</br>
+                                    for util in utilites:</br>
+                                        if curr_space < util:</br>
+                                            curr_space = util</br>
+                                times_on[curr_space - 1] += 1</br>
+                            </br>
+                            elif item == "jail free":</br>
+                                jail_free = True</br>
+                            </br>
+                        elif item > 0:</br>
+                            curr_space = item</br>
+                            times_on[curr_space - 1] += 1</br>
+                            if item == 11 and jail_free:</br>
+                                times_jailed += 1</br>
+                                jail_free = False</br>
+                            elif item == 11:</br>
+                                times_jailed += 1</br>
+                                i += 2</br>
+                            </br>
+                        elif item == -3:</br>
+                            curr_space -= 3</br>
+                            times_on[curr_space - 1] += 1</br>
+                        </br>
+                    if spots[curr_space - 1] == "Community Chest":</br>
+                        rand_comm = random.randint(0, len(community_chest) - 1)</br>
+                        item = community_chest[rand_comm]</br>
+                        if isinstance(item, str):</br>
+                            jail_free = True</br>
+                        elif item > 0:</br>
+                            curr_space = item</br>
+                            times_on[curr_space - 1] += 1</br>
+                            if item == 11 and jail_free:</br>
+                                times_jailed += 1</br>
+                                jail_free = False</br>
+                            elif item == 11:</br>
+                                times_jailed += 1</br>
+                                i += 2</br>
+                            </br>
+                    if spots[curr_space - 1] == "Go To Jail":</br>
+                        if jail_free:</br>
+                            times_jailed += 1</br>
+                            jail_free = False</br>
+                        else:</br>
+                            times_jailed += 1</br>
+                            i += 2</br>
+                        </br>
+                    i += 1</br>
+                </br>
+                    if dice_1 == dice_2:</br>
+                        num_repeats += 1</br>
+                    </br>
+                        if num_repeats == 3 and not jail_free:</br>
+                            curr_space = 11</br>
+                            times_jailed += 1</br>
+                            num_repeats = 0</br>
+                            i += 2</br>
+                        </br>
+                        elif num_repeats == 3 and jail_free:</br>
+                            curr_space = 11</br>
+                            times_jailed += 1</br>
+                            num_repeats = 0</br>
+                        </br>
+                        else:</br>
+                            i -= 1</br>
+                            tot_repeats += 1</br>
+                        </br>
+                    else:</br>
+                        num_repeats = 0</br>
+                    </br>
+                times_on[10] += times_jailed</br>
+                repeats = sum(times_on)</br>
+                print(times_on)</br>
+                print(sum(times_on))</br>
+            </br>
+                for i in range(0, len(times_on)):</br>
+                &emsp;times_on[i] = round(times_on[i] / repeats, 4)</br>
+                </br>
+                print(times_on)</br>
+                print(sum(times_on))</br>
+            </br>
+                sort(spots, times_on)</br>
+            </br>	
+        </br>   
+            def sort(spots, times_on):</br>
+            &emsp;for i in range(len(times_on)):</br>
+            &emsp;&emsp;smallest = i</br>
+            &emsp;&emsp;&emsp;for j in range(i, len(times_on)):</br>
+            &emsp;&emsp;&emsp;&emsp;if times_on[smallest] > times_on[j]:</br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;smallest = j</br>
+            &emsp;&emsp;dummy_var = times_on[smallest]</br>
+            &emsp;&emsp;times_on[smallest] = times_on[i]</br>
+            &emsp;&emsp;times_on[i] = dummy_var</br>
+            </br>
+            &emsp;&emsp;dummy_var = spots[smallest]</br>
+            &emsp;&emsp;spots[smallest] = spots[i]</br>
+            &emsp;&emsp;spots[i] = dummy_var</br>
+            </br>
+            &emsp;print(times_on)</br>
+            &emsp;print(spots)	</br>		
 			</code>
-			
-			<div class="description">
-			
-				<p></br>This is finally the code that creates our sentences. What we are effectively doing is setting a random probability
-					that we want each of our next words to achieve at a threshold. Then we continuously add these words to a list that will become
-					our sentence. The sentence ends once we hit the word "None" (which refers to no word) twice. </br></br>
-					This is similar to what we had done for the Monte Cristo trigam model, but I have changed some of the methods involved for
-					simplicities sake. </br></br>
-					The rest of the program will generate a sentence using the above function, checks how many syllables are in each word, and then
-					attempt to create the three haiku lines with those words in their proper order. If it can't, it scraps that sentence and generates
-					a new one. This keeps going until a haiku is created. You can see some of the haikus that the algorithm generated by reloading this
-					and looking at the top of this page.</br></br></p>
-				
-			</div>
 			
 		</div>
 		
