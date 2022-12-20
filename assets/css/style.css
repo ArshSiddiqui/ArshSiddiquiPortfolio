@@ -158,7 +158,7 @@ select {
 	width: 6rem;
 }
 
-#WPBtn {
+#WPBtn, #WPBtn1 {
 	border-color: rgb(63, 28, 10);
 	border-style: solid;
 	background-color: rgb(63, 28, 10);
@@ -194,7 +194,7 @@ select {
 
 }
 
-#AboutBtn:hover,#WPBtn:hover {
+#AboutBtn:hover,#WPBtn:hover, #WPBtn1:hover {
 	background-color: brown;
     border-color: brown;
     transition: 1s;

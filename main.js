@@ -10,5 +10,39 @@ const descriptions = ["Early to rise, early to bed. Makes a man healthy, but soc
 var randNum = Math.floor(Math.random() * descriptions.length);
 document.getElementById("description").innerHTML = descriptions[randNum];
 
+const images = ["./assets/images/MeOnABench.jpg", "./assets/images/MeInKashmir.jpg"];
+var randImgNum = Math.floor(Math.random() * images.length);
+document.getElementById("frontImage").src = images[randImgNum];
 
+if (randImgNum == 1) {
+	document.body.style.backgroundColor = "#EBF7FF";//#777DA7
+	document.getElementById("title").style.color = "#30334A	";
+	document.getElementById("description").style.color = "#30334A";
 
+	document.getElementById("GitHubBtn").style.borderColor = "#30334A";
+	document.getElementById("GitHubBtn").style.color = "#30334A";
+	document.getElementById("GitHubBtn").style.backgroundColor = "#EBF7FF";
+	document.getElementById("LinkedInBtn").style.borderColor = "#30334A";
+	document.getElementById("LinkedInBtn").style.color = "#30334A";
+	document.getElementById("LinkedInBtn").style.backgroundColor = "#EBF7FF";
+
+	document.getElementById("WPBtn").style.borderColor = "#EBF7FF";
+	document.getElementById("WPBtn").style.color = "#EBF7FF";
+	document.getElementById("WPBtn").style.backgroundColor = "#30334A";
+	document.getElementById("WPBtn").onmouseover = function() {
+		this.style.backgroundColor = "black";
+		this.style.transition = "1s";
+	}
+	document.getElementById("WPBtn").onmouseout = function() {
+		this.style.backgroundColor = "#30334A";
+		this.style.transition = "1s";
+	}
+
+	document.getElementById("WPBtn").class = "blue";
+	document.getElementById("AboutBtn").style.borderColor = "#EBF7FF";
+	document.getElementById("AboutBtn").style.color = "#EBF7FF";
+	document.getElementById("AboutBtn").style.backgroundColor = "#30334A";
+	document.getElementById("WPBtn1").style.borderColor = "#EBF7FF";
+	document.getElementById("WPBtn1").style.color = "#EBF7FF";
+	document.getElementById("WPBtn1").style.backgroundColor = "#30334A";
+}
