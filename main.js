@@ -18,6 +18,10 @@ if (randImgNum == 1) {
 	document.body.style.backgroundColor = "#EBF7FF";
 	document.getElementById("title").style.color = "#30334A	";
 	document.getElementById("description").style.color = "#30334A";
+	document.getElementById("text").style.color = "#EBF7FF";
+	document.getElementById("text").style.backgroundColor = "#30334A";
+	document.getElementById("contact").style.color = "#30334A";
+	document.getElementById("contact").style.backgroundColor = "#EBF7FF";
 
 	document.getElementById("GitHubBtn").style.borderColor = "#30334A";
 	document.getElementById("GitHubBtn").style.color = "#30334A";
