@@ -171,7 +171,7 @@ select {
 
 /* -------------------------GENERATED POE BEGINNING------------------------- */
 .main {
-	max-width: 75ch;
+	max-width: 40%;
 	margin: 2rem auto;
 	justify-content: top;
 	height: 8rem;
@@ -189,14 +189,29 @@ select {
 	font-family: 'Karla', sans-serif;
 	color: #000000;
 	font-size: 1rem;
-	max-width: 75ch;
+	max-width: 100%;
 }
 
 .Details {
 	font-family: 'Karla', sans-serif;
 	color: #000000;
 	font-size: .75rem;
-	max-width: 75ch;
+	max-width: 100%;
+}
+
+.dataframe {
+	border-collapse: collapse;
+	margin: 3rem auto;
+	font-size: 0.9em;
+	font-family: sans-serif;
+}
+
+.dataframe thead tr {
+	background-color: #C7D2D6;
+}
+
+.dataframe tbody tr:nth-of-type(odd){
+	background-color: #DEE8EC;
 }
 
 .generatedPoeCode {
