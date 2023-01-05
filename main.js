@@ -10,7 +10,7 @@ const descriptions = ["Early to rise, early to bed. Makes a man healthy, but soc
 var randNum = Math.floor(Math.random() * descriptions.length);
 document.getElementById("description").innerHTML = descriptions[randNum];
 
-const images = ["./assets/images/MeOnABench.jpg", "./assets/images/MeInKashmir.jpg"];
+const images = ["./assets/images/MeOnABench.jpg", "./assets/images/MeInKashmir.jpg"];//, "./assets/images/MeInLittleItaly.jpg"
 var randImgNum = Math.floor(Math.random() * images.length);
 document.getElementById("frontImage").src = images[randImgNum];
 
@@ -90,6 +90,84 @@ if (randImgNum == 1) {
 	document.getElementById("WPBtn1").onmouseout = function() {
 		this.style.backgroundColor = "#30334A";
 		this.style.borderColor = "#30334A";
+		this.style.transition = "1s";
+	}
+} else if (randImgNum == 2) {
+	document.body.style.backgroundColor = "#000000";
+	document.getElementById("title").style.color = "#F9DC5C	";
+	document.getElementById("description").style.color = "#F9DC5C";
+	document.getElementById("text").style.color = "#000000";
+	document.getElementById("text").style.backgroundColor = "#F9DC5C";
+	document.getElementById("contact").style.color = "#F9DC5C";
+	document.getElementById("contact").style.backgroundColor = "#000000";
+
+	document.getElementById("GitHubBtn").style.borderColor = "#F9DC5C";
+	document.getElementById("GitHubBtn").style.color = "#F9DC5C";
+	document.getElementById("GitHubBtn").style.backgroundColor = "#000000";
+	document.getElementById("GitHubBtn").onmouseover = function() {
+		this.style.color = "#FCEEB0";
+		this.style.borderColor = "#FCEEB0";
+		this.style.transition = "1s";
+	}
+	document.getElementById("GitHubBtn").onmouseout = function() {
+		this.style.color = "#F9DC5C";
+		this.style.borderColor = "#F9DC5C";
+		this.style.transition = "1s";
+	}
+
+	document.getElementById("LinkedInBtn").style.borderColor = "#F9DC5C";
+	document.getElementById("LinkedInBtn").style.color = "#F9DC5C";
+	document.getElementById("LinkedInBtn").style.backgroundColor = "#000000";
+	document.getElementById("LinkedInBtn").onmouseover = function() {
+		this.style.color = "#FCEEB0";
+		this.style.borderColor = "#FCEEB0";
+		this.style.transition = "1s";
+	}
+	document.getElementById("LinkedInBtn").onmouseout = function() {
+		this.style.color = "#F9DC5C";
+		this.style.borderColor = "#F9DC5C";
+		this.style.transition = "1s";
+	}
+
+	document.getElementById("WPBtn").style.borderColor = "#000000";
+	document.getElementById("WPBtn").style.color = "#000000";
+	document.getElementById("WPBtn").style.backgroundColor = "#F9DC5C";
+	document.getElementById("WPBtn").onmouseover = function() {
+		this.style.backgroundColor = "#FCEEB0";
+		this.style.borderColor = "#FCEEB0";
+		this.style.transition = "1s";
+	}
+	document.getElementById("WPBtn").onmouseout = function() {
+		this.style.backgroundColor = "#F9DC5C";
+		this.style.borderColor = "#F9DC5C";
+		this.style.transition = "1s";
+	}
+
+	document.getElementById("AboutBtn").style.borderColor = "#000000";
+	document.getElementById("AboutBtn").style.color = "#000000";
+	document.getElementById("AboutBtn").style.backgroundColor = "#F9DC5C";
+	document.getElementById("AboutBtn").onmouseover = function() {
+		this.style.backgroundColor = "#FCEEB0";
+		this.style.borderColor = "#FCEEB0";
+		this.style.transition = "1s";
+	}
+	document.getElementById("AboutBtn").onmouseout = function() {
+		this.style.backgroundColor = "#F9DC5C";
+		this.style.borderColor = "#F9DC5C";
+		this.style.transition = "1s";
+	}
+
+	document.getElementById("WPBtn1").style.borderColor = "#000000";
+	document.getElementById("WPBtn1").style.color = "#000000";
+	document.getElementById("WPBtn1").style.backgroundColor = "#F9DC5C";
+	document.getElementById("WPBtn1").onmouseover = function() {
+		this.style.backgroundColor = "#FCEEB0";
+		this.style.borderColor = "#FCEEB0";
+		this.style.transition = "1s";
+	}
+	document.getElementById("WPBtn1").onmouseout = function() {
+		this.style.backgroundColor = "#F9DC5C";
+		this.style.borderColor = "#F9DC5C";
 		this.style.transition = "1s";
 	}
 }
